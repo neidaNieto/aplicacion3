@@ -1,0 +1,345 @@
+﻿   <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--gripo css
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo javascript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<style type="text/css">
+body {
+	background-color: #FCC;
+	text-align: left;
+}
+.centrado {
+	text-align: center;
+}
+.centrado {
+	text-align: center;
+}
+.centrado {
+	text-align: center;
+}
+.centrado {
+	text-align: center;
+}
+.centrado {
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Volcanes mas peligrosos del mundo</h1>
+   </div>
+   <!--sustituir colapsable por visor de img-->
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:1026px;height:396px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+      
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Volcan Popocatépetl</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Volcan Edna</h2>
+       </a>
+     </li> 
+    <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Volcan Merapi</h2>
+       </a>
+      </li>
+    </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a"> 
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion tres</h4>
+    <h4>Neida Fernanda Nieto Auroza</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a"> <!--pag 1-->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!--titulo-->
+    <h1>Volcan Popocatépetl</h1>
+    </div>  <!--titulo-->
+   <div data-role="content" align="center"> <!--contenido-->
+      <div data-role="main" class="ui-content">  <!--contenido del Colapsable-->
+       <div data-role="collapsible" data-content-theme="false"> <!--colapsable-->
+         <h1>TAMAÑO</h1>
+          <div>
+          <p>Su altura es de 5500 msnm, es de forma cónica, tiene un diámetro de 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m.</p>
+          <br>
+          </div>
+     <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/p3.jpg',1)"><img src="imagenes/p1.jpg" width="499" height="366" id="Image2" /></a></p>
+      </div>
+  
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>ANTIGUEDAD</h1>
+          <div>
+          <p>El Popocatépetl es un estratovolcán, y los estudios paleomagnéticos que se han hecho de él indican que tiene una edad aproximada de 730 000 años</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/p2.JPG" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>LOCALIZACION</h1>
+          <div>
+          <p>Este volcan se encuentra localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México.
+ Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/local.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>ACTIVIDAD</h1>
+          <div>
+          <p>El Popocatépetl es un volcán activo y está monitoriada por CENAPRET para mas infornacion consulta la siguiente paguina</p>
+          <p><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/">**màs informacion aqui**</a></p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/cenapred.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>MEDIDAS DE PREVENCIÓN</h1>
+         <div>
+          <p>Ante caida de ceniza y una erupcion volcanica</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/prevencion2.jpg" width="50%" height="50%"> 
+         <img src="imagenes/prevencion1.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>ESTADOS QUE SE AFECTARIAN POR LA ERUPCION DEL VOLCAN POPOCATEPETL</h1>
+          <div>
+          <p>Las delegaciones tentativamente afectadas serían: Milpa Alta, Tláhuac, Xochimilco, Iztapalapa, Tlalpan y Coyoacán; en menor proporción estarían Magdalena Contreras, 
+Cuajimalpa, Álvaro Obregón, Miguel Hidalgo, Cuauhtémoc, Venustiano Carranza, Gustavo A. Madero y Azcapotzalco </p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/mapa.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+     </div> <!--colapsable-->
+     </div> <!--contenido del Colapsable-->
+  
+  <div data-role="footer" data-theme="a">
+    <h4>Neida Fernanda Nieto Auroza</h4>
+  </div>
+ </div><!--contenido-->
+</div> <!--pag 1-->
+
+
+
+
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> <!--pag 2-->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!--titulo-->
+    <h1>Volcan Etna, Italia</h1>
+    </div>  <!--titulo-->
+   <div data-role="content" align="center"> <!--contenido-->
+      <div data-role="main" class="ui-content">  <!--contenido del Colapsable-->
+       <div data-role="collapsible" data-content-theme="false"> <!--colapsable-->
+         <h1>TAMAÑO</h1>
+          <div>
+          <p>Su altura ha variado a través del tiempo, debido a las frecuentes erupciones que afectan su cumbre. Actualmente registra 3,320-3,350 metros de elevación, varios metros menos que en 1865. Cubre un área aproximada de 1,600 kilómetros cuadrados, aunque puede ser menos: 1,190 kilómetros cuadrados. Su circunferencia es de 140-150 kilómetros.</p>
+          <br>
+          </div>
+     <div>
+         <img src="imagenes/e1.jpg" width="50%" height="50%"> </div>
+      </div>
+  
+      
+        <div data-role="collapsible" data-content-theme="false">
+         <h1>ANTIGUEDAD</h1>
+          <div>
+          <p>Los registros más antiguos de este volcán datan de 1500 a. C. y tiene el historial de erupciones documentadas más antiguo de todos los volcanes.</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/p2.JPG" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>LOCALIZACION</h1>
+          <div>
+          <p>Está ubicado en el límite de una zona de subducción, donde la placa Africana se está hundiendo bajo la Placa Euroasiática desde hace aproximadamente 100 millones de años.</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/local1.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>MEDIDAS DE PREVENCIÓN</h1>
+         <div>
+          <p>Ante caida de ceniza y una erupcion volcanica</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/prevencion2.jpg" width="50%" height="50%"> 
+         <img src="imagenes/prevencion1.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>ESTADOS QUE SE AFECTARIAN POR LA ERUPCION DEL VOLCAN EDNA</h1>
+          <div>
+          <p>Una de las más perturbadas por el Etna ha sido Catania, pero entre las afectadas también figuran Mesina y Zafferana.</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/e3.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+     </div> <!--colapsable-->
+     </div> <!--contenido del Colapsable-->
+  
+  <div data-role="footer" data-theme="a">
+    <h4>Neida Fernanda Nieto Auroza</h4>
+  </div>
+ </div><!--contenido-->
+</div> <!--pag 2-->
+
+
+
+
+
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a"> <!--pag 2-->
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a"> <!--titulo-->
+    <h1>Volcan Merapi, Indonesia</h1>
+    </div>  <!--titulo-->
+   <div data-role="content" align="center"> <!--contenido-->
+      <div data-role="main" class="ui-content">  <!--contenido del Colapsable-->
+       <div data-role="collapsible" data-content-theme="false"> <!--colapsable-->
+         <h1>TAMAÑO</h1>
+          <div>
+          <p> Tiene una altitud 2.911 msnm obteniendo una forma de cono </p>
+          <br>
+          </div>
+     <div>
+         <img src="imagenes/m4.jpg" width="50%" height="50%"> </div>
+      </div>
+  
+      
+        <div data-role="collapsible" data-content-theme="false">
+         <h1>ANTIGUEDAD</h1>
+          <div>
+          <p>Este volcan ha sido incluido en la lista de Volcanes de la Década. En 1994, mató a 27 personas.</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/m2.JPG" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>LOCALIZACION</h1>
+          <div>
+          <p>Monte Merapi o Marapi (en indonesio/javanés: Gunung Merapi, traducido como Montaña de fuego) es un volcán con forma de cono ubicado en Java Central en Indonesia a unos 400 km al sudeste de la capital, Yakarta.</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/m3.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>MEDIDAS DE PREVENCIÓN</h1>
+         <div>
+          <p>Ante caida de ceniza y una erupcion volcanica</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/prevencion2.jpg" width="50%" height="50%"> 
+         <img src="imagenes/prevencion1.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+      
+      
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>ESTADOS QUE SE AFECTARIAN POR LA ERUPCION DEL VOLCAN MERAPI</h1>
+          <div>
+          <p>los principales afectados son la ciudad de Yogyakarta, y miles de personas que viven en sus faldas, con algunas aldeas ubicadas a 1700 msnm.</p>
+          <br>
+          </div>
+      <div>
+         <img src="imagenes/m5.jpg" width="50%" height="50%"> </div>
+      </div>
+      
+     </div> <!--colapsable-->
+     </div> <!--contenido del Colapsable-->
+  
+  <div data-role="footer" data-theme="a">
+    <h4>Neida Fernanda Nieto Auroza</h4>
+  </div>
+ </div><!--contenido-->
+</div> <!--pag 3-->
+    
+</body>
+</html>
